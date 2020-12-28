@@ -8,7 +8,7 @@ print(ls.__len__())
 print(len(ls))
 ```
 
-
+<br><br><br><br>
 1번 print랑 2번 print랑 같은 역할을 한다
   
 
