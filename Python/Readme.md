@@ -12,12 +12,13 @@ print(len(ls))
 1번 print랑 2번 print랑 같은 역할을 한다
   
 <br><br><br><br>
-'''class A:
+
+```class A:
     def __len__(self):
         return 5
 
 print(len(A()))
-'''
+```
 <br>
 했을 때 5가 출력된다.
 
