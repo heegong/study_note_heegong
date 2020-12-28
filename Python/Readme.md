@@ -2,7 +2,8 @@
 <br><br>
 ## __len__이 친구를 알았다.
 <br><br>
-```ls = [1,2,3]
+```
+ls = [1,2,3]
 print(ls.__len__())
 
 print(len(ls))
@@ -13,7 +14,8 @@ print(len(ls))
   
 <br><br><br><br>
 
-```class A:
+```
+class A:
     def __len__(self):
         return 5
 
@@ -31,7 +33,8 @@ print(len(A()))
 # 2020-12-28
 <br><br>
 파이썬 2같은 경우에는 
-```x = 'aaa'
+```
+x = 'aaa'
 dummy = [x for x in 'abc']          #리스트 컴프리헨션
 print(x)
 ```
