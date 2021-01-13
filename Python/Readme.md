@@ -1,6 +1,7 @@
 # 2021-01-13
 
-```class parent:
+```
+class parent:
     def next1(self):
         self._1 += self._3
         if self._1 >= self._2:
