@@ -1,3 +1,68 @@
+# 2021-01-13
+
+```class parent:
+    def next1(self):
+        self._1 += self._3
+        if self._1 >= self._2:
+            raise StopIteration
+
+
+    
+    def next2(self):
+        self._1 += self._3
+        if self._1 <= self._2:
+            raise StopIteration
+
+
+
+class my_range(parent):
+    def __init__(self,*args):
+        len_args = len(args)
+        if len_args==1:
+            self._1 = 0
+            self._2 = args[0]
+            self._3 = 1
+        elif len_args==2:
+            self._1 = args[0]
+            self._2 = args[1]
+            self._3 = 1
+        else:
+            self._1 = args[0]
+            self._2 = args[1]
+            self._3 = args[2]
+
+        if self._3 > 0:
+            self._1-=1
+
+
+
+    def __iter__(self):
+        return self
+
+
+    def __next__(self):
+        # self._1 += self._3
+        if self._3 > 0 :
+            # if self._1 >= self._2:
+            #     raise StopIteration
+            super().next1()
+        else:
+            # if self._1 <= self._2:
+            #     raise StopIteration
+            super().next2()
+        return self._1
+
+
+
+for i in my_range(3,0,-1):
+    print(i)
+
+```
+range함수를 구핸했다.
+
+
+
+
 # 2020-12-26
 <br><br>
 ## __len__이 친구를 알았다.
